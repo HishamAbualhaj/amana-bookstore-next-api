@@ -8,15 +8,8 @@
       "price": 89.99,
       "image": "/images/book1.jpg",
       "isbn": "978-0123456789",
-      "genre": [
-        "Physics",
-        "Textbook"
-      ],
-      "tags": [
-        "Mechanics",
-        "Physics",
-        "University"
-      ],
+      "genre": ["Physics", "Textbook"],
+      "tags": ["Mechanics", "Physics", "University"],
       "datePublished": "2022-01-15",
       "pages": 654,
       "language": "English",
@@ -34,15 +27,8 @@
       "price": 125.5,
       "image": "/images/book2.jpg",
       "isbn": "978-0234567890",
-      "genre": [
-        "Physics",
-        "Quantum Mechanics"
-      ],
-      "tags": [
-        "Quantum",
-        "Advanced Physics",
-        "Modern Physics"
-      ],
+      "genre": ["Physics", "Quantum Mechanics"],
+      "tags": ["Quantum", "Advanced Physics", "Modern Physics"],
       "datePublished": "2023-03-10",
       "pages": 782,
       "language": "English",
@@ -60,15 +46,8 @@
       "price": 98.75,
       "image": "/images/book3.jpg",
       "isbn": "978-0345678901",
-      "genre": [
-        "Astronomy",
-        "Astrophysics"
-      ],
-      "tags": [
-        "Stars",
-        "Galaxies",
-        "Cosmology"
-      ],
+      "genre": ["Astronomy", "Astrophysics"],
+      "tags": ["Stars", "Galaxies", "Cosmology"],
       "datePublished": "2022-09-20",
       "pages": 567,
       "language": "English",
@@ -77,6 +56,25 @@
       "reviewCount": 12,
       "inStock": false,
       "featured": false
+    },
+    {
+      "id": "599",
+      "title": "Fundamentals of Classical Mechanics",
+      "author": "Dr. Ahmad Al-Kindi",
+      "description": "A comprehensive introduction to classical mechanics covering Newtonian dynamics, conservation laws, rotational motion, and oscillations with modern applications.",
+      "price": 89.99,
+      "image": "/images/book1.jpg",
+      "isbn": "978-0123456789",
+      "genre": ["Physics", "Textbook"],
+      "tags": ["Mechanics", "Physics", "University"],
+      "datePublished": "2022-01-15",
+      "pages": 654,
+      "language": "English",
+      "publisher": "Al-Biruni Academic Press",
+      "rating": 4.8,
+      "reviewCount": 23,
+      "inStock": true,
+      "featured": true
     }
   ]
 }

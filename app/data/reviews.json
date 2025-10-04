@@ -1,5 +1,5 @@
 {
-  "reviews": [
+  "books": [
     {
       "id": "review-1",
       "bookId": "1",
@@ -108,6 +108,16 @@
       "title": "Excellent climate science integration",
       "comment": "Great integration of geophysics with climate science. The plate tectonics chapters are well-written and current.",
       "timestamp": "2024-03-08T11:40:00Z",
+      "verified": true
+    },
+    {
+      "id": "88",
+      "bookId": "2",
+      "author": "Dr. Hisham Abualhaj",
+      "rating": 5,
+      "title": "Excellent foundation for physics students",
+      "comment": "Dr. Al-Kindi has created a comprehensive introduction to classical mechanics. The mathematical derivations are clear and the problem sets are well-designed for understanding core principles.",
+      "timestamp": "2024-01-15T10:30:00Z",
       "verified": true
     }
   ]
