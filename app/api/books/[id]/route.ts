@@ -6,7 +6,7 @@ export async function GET(
   context: { params: Promise<{ id: string }> }
 ) {
   const { id } = await context.params;
-  const data: Record<string, any>[] = fetchData("../data/books.json", "books");
+  const data: Record<string, any>[] = fetchData("books");
   const item = data.find((book) => {
     return book.id === id;
   });

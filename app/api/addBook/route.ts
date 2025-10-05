@@ -5,7 +5,7 @@ export async function POST(request: Request) {
   const id = Math.ceil(Math.random() * 1000);
 
   try {
-    writeFile({ id: String(id), ...newBook }, "../data/books.json", "books");
+    writeFile({ id: String(id), ...newBook }, "books");
 
     return NextResponse.json({
       message: "Book added successfully!",

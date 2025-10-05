@@ -4,8 +4,8 @@ import path from "path";
 const _fileName = fileURLToPath(import.meta.url);
 const _pathName = path.dirname(_fileName);
 
-function fetchData(url, key) {
-  const filePath = path.join(_pathName, url);
+function fetchData(key) {
+  const filePath = path.join(process.cwd(), "app", "data", `${key}.json`);
   const file = readFileSync(filePath, "utf-8");
   const arr = JSON.parse(file)[key];
 

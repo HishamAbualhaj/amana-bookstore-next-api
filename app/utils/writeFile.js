@@ -4,9 +4,9 @@ import { fileURLToPath } from "url";
 import path from "path";
 const _fileName = fileURLToPath(import.meta.url);
 const _pathName = path.dirname(_fileName);
-function writeFile(newData, url, fileName) {
-  const data = fetchData(url, fileName);
-  const filePath = path.join(_pathName, url);
+function writeFile(newData, fileName) {
+  const data = fetchData(fileName);
+  const filePath = path.join(process.cwd(), "app", "data", `${fileName}.json`);
   const books = [...data, newData];
 
   writeFileSync(filePath, JSON.stringify({ [fileName]: books }));

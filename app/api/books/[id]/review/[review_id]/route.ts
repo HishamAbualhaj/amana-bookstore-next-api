@@ -7,10 +7,7 @@ export async function GET(
 ) {
   const { review_id, id } = await context.params;
 
-  const data: Record<string, any>[] = fetchData(
-    "../data/reviews.json",
-    "reviews"
-  );
+  const data: Record<string, any>[] = fetchData("reviews");
   const item = data.filter((review) => {
     return review.bookId === id;
   });

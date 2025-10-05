@@ -5,11 +5,7 @@ export async function POST(request: Request) {
   const id = Math.ceil(Math.random() * 1000);
 
   try {
-    writeFile(
-      { id: String(id), ...newReview },
-      "../data/reviews.json",
-      "reviews"
-    );
+    writeFile({ id: String(id), ...newReview }, "reviews");
     return NextResponse.json({
       message: "Review added successfully!",
       review: newReview,

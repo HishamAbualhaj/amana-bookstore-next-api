@@ -4,7 +4,7 @@ export async function GET(request: Request) {
   try {
     let response: Record<string, any>[] = [];
     let isAll = true;
-    const data = fetchData("../data/books.json", "books");
+    const data = fetchData("books");
 
     const { searchParams } = new URL(request.url);
     let startDate = searchParams.get("startDate");
