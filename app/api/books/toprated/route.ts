@@ -2,7 +2,7 @@ import fetchData from "@/app/utils/fetchData";
 import { NextResponse } from "next/server";
 
 export async function GET() {
-  const data: Record<string, any>[] = fetchData("../data/books.json", "books");
+  const data: Record<string, any>[] = fetchData("books");
   const toprated = data
     .map((book) => ({
       ...book,
