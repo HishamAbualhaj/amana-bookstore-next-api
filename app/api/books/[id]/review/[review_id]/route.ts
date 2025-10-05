@@ -1,13 +1,12 @@
 import fetchData from "@/app/utils/fetchData";
 import { NextResponse } from "next/server";
 
-export function GET(
+export async function GET(
   request: Request,
-  { params }: { params: { review_id: string; id: string } }
+  { params }: { params: Promise<{ id: string; review_id: string }> }
 ) {
-  const { review_id, id } = params;
+  const { review_id, id } = await params;
 
-  console.log(review_id);
   const data: Record<string, any>[] = fetchData(
     "../data/reviews.json",
     "reviews"
