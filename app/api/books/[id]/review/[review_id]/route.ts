@@ -3,9 +3,9 @@ import { NextResponse } from "next/server";
 
 export async function GET(
   request: Request,
-  { params }: { params: Promise<{ id: string; review_id: string }> }
+  context: { params: Promise<{ id: string; review_id: string }> }
 ) {
-  const { review_id, id } = await params;
+  const { review_id, id } = await context.params;
 
   const data: Record<string, any>[] = fetchData(
     "../data/reviews.json",
